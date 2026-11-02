@@ -1,0 +1,5 @@
+Options -Indexes -ExecCGI
+RemoveHandler .php .phtml
+<FilesMatch "\.(php|phtml|phar|html?)$">
+  Require all denied
+</FilesMatch>

@@ -1,0 +1,8 @@
+Options -Indexes
+<FilesMatch "^(schema\.sql|README\.md|\.gitignore)$">
+  Require all denied
+</FilesMatch>
+# Descomenta cuando tengas HTTPS activo en tu dominio:
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
